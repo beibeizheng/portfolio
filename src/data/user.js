@@ -3,7 +3,7 @@ const INFO = {
 		title: "Portfolio by Beibei Zheng",
 		name: "Beibei Zheng.",
 		email: "beibeizhengnz@gmail.com",
-		logo: "../logo.png",
+		logo: "/portfolio/logo.png",
 	},
 
 	socials: {
