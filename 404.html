@@ -2,15 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <title>Page Not Found</title>
     <script>
-      var pathSegmentsToKeep = 1; // 子路径深度
-      var l = window.location;
-      l.replace(
-        l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
-        l.pathname.split("/").slice(0, 1 + pathSegmentsToKeep).join("/") + "/?p=/" +
-        l.pathname.slice(1).replace(/\/$/, "") +
-        l.search
-      );
+      var path = window.location.pathname;
+      window.location.replace('/portfolio/' + path.substring(1));
     </script>
   </head>
+  <body>
+    Redirecting...
+  </body>
 </html>
