@@ -4,26 +4,26 @@ import "./styles/skills.css";
 const skillsData = {
   frontend: [
     { name: "JavaScript", logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png" },
-    { name: "React", logo: "../icon/react.png" },
+    { name: "React", logo: `${process.env.PUBLIC_URL}/icon/react.png` },
     { name: "HTML5", logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png" },
-    { name: "CSS3", logo: "../icon/css.png" },
-    { name: "Bootstrap", logo: "../icon/bootstrap.png" },
+    { name: "CSS3", logo: `${process.env.PUBLIC_URL}/icon/css.png` },
+    { name: "Bootstrap", logo: `${process.env.PUBLIC_URL}/icon/bootstrap.png` },
   ],
   backend: [
     { name: "Python", logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png" },
-    { name: "Flask", logo: "../icon/flask.png" },
-    { name: "PHP", logo: "../icon/php.png" },
-    { name: "MongoDB", logo: "../icon/mongodb.png" },
-    { name: "Mysql", logo: "../icon/mysql.png" },
-
+    { name: "Flask", logo: `${process.env.PUBLIC_URL}/icon/flask.png` },
+    { name: "PHP", logo: `${process.env.PUBLIC_URL}/icon/php.png` },
+    { name: "MongoDB", logo: `${process.env.PUBLIC_URL}/icon/mongodb.png` },
+    { name: "Mysql", logo: `${process.env.PUBLIC_URL}/icon/mysql.png` },
   ],
   other: [
-    { name: "GitHub", logo: "../icon/github.png" },
-    { name: "Jira", logo: "../icon/jira.png" },
-    { name: "GIS", logo: "../icon/gis.png" },
-    { name: "Balsamiq", logo: "../icon/balsamiq.png" },
+    { name: "GitHub", logo: `${process.env.PUBLIC_URL}/icon/github.png` },
+    { name: "Jira", logo: `${process.env.PUBLIC_URL}/icon/jira.png` },
+    { name: "GIS", logo: `${process.env.PUBLIC_URL}/icon/gis.png` },
+    { name: "Balsamiq", logo: `${process.env.PUBLIC_URL}/icon/balsamiq.png` },
   ],
 };
+
 
 const Skills = () => {
   return (
