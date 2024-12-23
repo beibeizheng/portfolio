@@ -6,6 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#000000" />
 		<title>Reactfolio</title>
+		<script>
+			(function() {
+			  if (window.location.search.includes('p=')) {
+				const url = new URL(window.location);
+				const path = url.searchParams.get('p');
+				window.history.replaceState(null, '', path);
+			  }
+			})();
+		  </script>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>
